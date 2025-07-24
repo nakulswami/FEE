@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            max-width: 500px;
+            margin: auto;
+            border: 1px solid #9c9797;
+            padding: 100px;
+            border-radius: 20px;
+            background-color: #f2f2f2;
+        }
+
+        input,
+        textarea,
+        select, button {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #aaa;
+        }
+        button {
+            max-width: fit-content;
+            display: block;
+            margin-left: 225px;
+            background-color: #f2f2f2;
+            border: 1px solid #aaa;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #007BFF;
+            color: white;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Age:</label>
+        <input id="message" name="message" pattern="{18 - 60}" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" pattern="{10}" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <label for="confirm password">Confirm Password:</label>
+        <input type="confirm password" id="confirm password" name="confirm password" required>
+
+        <checkbox>
+            <label for="subscribe">Agree to all the termsand conditions</label>
+            <input type="checkbox" id="subscribe" name="subscribe">
+
+        <button type="submit">Submit</button>
+
+</body>
+
+</html>

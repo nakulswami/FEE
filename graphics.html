@@ -1,44 +1,49 @@
-// all html Graphics and shapes
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Graphics</title>
+    <title>All SVG Shapes</title>
 </head>
+
 <body>
-    <h1>Graphics and Shapes</h1>
-    <p>HTML </p>
 
-    <section>
+    <h1>SVG Shapes Example</h1>
+
+    <div class="svg-shapes">
+
         <h2>Circle</h2>
-        <div style="width: 100px; height: 100px; background-color: rgb(246, 255, 0); border-radius: 50%;"></div>
-    </section>
+        <svg width="120" height="120">
+            <circle cx="60" cy="60" r="50" fill="#8e44ad" />
+        </svg>
 
-    <section>
-        <h2>Square</h2>
-        <div style="width: 100px; height: 100px; background-color: red;"></div>
-    </section>
-
-    <section>
-        <h2>Triangle</h2>
-        <div style="width: 0; height: 0; border-left: 50px solid transparent; border-right: 50px solid transparent; border-bottom: 100px solid green;"></div>
-    </section>
-
-    <section>
         <h2>Rectangle</h2>
-        <div style="width: 200px; height: 100px; background-color: orange;"></div>
-    </section>
+        <svg width="200" height="120">
+            <rect x="20" y="20" width="160" height="80" fill="#16a085" />
+        </svg>
 
-    <section>
         <h2>Ellipse</h2>
-        <div style="width: 200px; height: 100px; background-color: rgb(48, 201, 61); border-radius: 50%;"></div>
-    </section>
+        <svg width="200" height="120">
+            <ellipse cx="100" cy="60" rx="80" ry="30" fill="#2980b9" />
+        </svg>
 
-    <section>
-        <h2>Polygon</h2>
-        <div style="width: 0; height: 0; border-left: 50px solid transparent; border-right: 50px solid transparent; border-bottom: 100px solid blue;"></div>
-    </section>
-    
+        <h2>Line</h2>
+        <svg width="200" height="50">
+            <line x1="10" y1="25" x2="190" y2="25" stroke="#c0392b" stroke-width="4" />
+        </svg>
+
+        <h2>Triangle</h2>
+        <svg width="120" height="120">
+            <polygon points="60,10 10,110 110,110" fill="#27ae60" />
+        </svg>
+
+        <h2>Square</h2>
+        <svg width="120" height="120">
+            <rect x="10" y="10" width="100" height="100" fill="#e74c3c" />
+        </svg>
+
+    </div>
+
 </body>
+
 </html>
